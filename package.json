@@ -1,6 +1,6 @@
 {
-  "name": "LAKIYA-MD",
-  "version": "6.8.3",
+  "name": "baileys-mod",
+  "version": "6.8.5",
   "description": "Custom Baileys WhatsApp API",
   "keywords": [
     "baileys", "baileys-mod", "wabot", "whatsapp",
@@ -12,14 +12,12 @@
     "url": "git+ssh://git@github.com/nstar-y/bail.git"
   },
   "license": "MIT",
-  "author": "MR-LAKIYA",
+  "author": "Adhiraj Singh",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib/*",
-    "WAProto/*.ts",
-    "WAProto/*.js",
-    "WASignalGroup/*.js",
+    "WAProto/*",
     "engine-requirements.js"
   ],
   "scripts": {
@@ -30,7 +28,6 @@
     "changelog:preview": "conventional-changelog -p angular -u",
     "changelog:update": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "example": "node --inspect -r ts-node/register Example/example.ts",
-    "example:mobile": "node --inspect -r ts-node/register Example/example.ts --mobile",
     "gen:protobuf": "sh WAProto/GenerateStatics.sh",
     "lint": "eslint src --ext .js,.ts,.jsx,.tsx",
     "lint:fix": "eslint src --fix --ext .js,.ts,.jsx,.tsx",
@@ -47,6 +44,7 @@
     "async-mutex": "^0.5.0",
     "axios": "^1.6.0",
     "cache-manager": "^5.7.6",
+    "cheerio": "^1.0.0-rc.10",
     "libphonenumber-js": "^1.10.20",
     "libsignal": "github:nstar-y/libsignal",
     "lodash": "^4.17.21",
